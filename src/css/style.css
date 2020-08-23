@@ -1,5 +1,8 @@
+
+
 body {
-  background: rgb(240,74,138);
-  background: linear-gradient(90deg, rgba(240,74,138,1) 0%, rgba(254,120,83,1) 100%);
+    background-image: linear-gradient(to right, #f04a8a, #f8527b, #fd5d6d, #ff6a5f, #fe7853);
+    font-family: myFirstFont;
+    font-weight: 700;
 }
 

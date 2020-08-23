@@ -1,5 +1,9 @@
 <template>
-  <h1>Trailer Head</h1>
+  <div id="app">
+    <h2>Now Playing: </h2>
+  </div>
+  
+  
 </template>
 
 <script>
