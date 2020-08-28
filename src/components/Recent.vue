@@ -1,5 +1,5 @@
 <template>
-  <h1>Recent</h1>
+  <h1>Trailers</h1>
 </template>
 
 <script>
