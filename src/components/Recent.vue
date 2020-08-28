@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <carousel :perPage="1.45" :pagination-enabled="false">
+    <carousel :perPage="1.45" :pagination-enabled="false" :autoplay="true">
       <slide>
         <a href="trialer1"><img src="../assets/Trailers/trailer1.png"></a>
       </slide>
@@ -15,6 +15,9 @@
       </slide>
       <slide>
         <a href="trailer2"><img src="../assets/Trailers/trailer5.png"></a>
+      </slide>
+      <slide>
+        <a href="trialer1"><img src="../assets/Trailers/trailer1.png"></a>
       </slide>
     </carousel>
 
