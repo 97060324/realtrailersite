@@ -22,7 +22,6 @@ export default {
 
 <style>
 #app {
-  text-align: center;
   color: #ffffff;
 }
 </style>

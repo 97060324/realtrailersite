@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <header>
-      <h2>Trending Trailers</h2>
+      <a href="#"><img src="../assets/hamburg-btn.svg"></a>
+      <a class="searchbtn" href="#"><img src="../assets/search.svg"></a>
+      <h1>Trending <br>Trailers</h1>
     </header>
   </div>
   
