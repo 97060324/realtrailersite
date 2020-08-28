@@ -8,6 +8,11 @@ body {
     font-family: 'Customfont', sans-serif;
 }
 
+.body {
+  margin-top: -20px;
+  padding-left: 20px;
+}
+
 header {
     margin-top: 25px;
     padding: 20px;
@@ -19,4 +24,19 @@ header {
 
 .searchbtn {
     float: right;
+}
+
+.trialerofw {
+  margin-top: 35px;
+}
+
+.totw {
+  width: 95%;
+  height: 150px;
+  border-radius: 20px;
+  background-color: black;
+}
+
+.image-totw {
+  width: 32.5%;
 }
