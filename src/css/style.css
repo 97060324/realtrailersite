@@ -38,5 +38,14 @@ header {
 }
 
 .image-totw {
-  width: 32.5%;
+  position: relative;
+  width: 32.4%;
+  
 }
+
+.title-totw {
+  position: fixed;
+  text-align: center;
+  padding-left: 30%;
+}
+

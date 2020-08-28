@@ -20,10 +20,15 @@
 
     <h2 class="trialerofw">Trailer of the week</h2>
     <div class="totw">
+    
       <img class="image-totw" src="../assets/Trailers/trailer3.png">
+      
     </div><br>
     <div class="totw">
       <img class="image-totw" src="../assets/Trailers/trailer4.png">
+    </div><br>
+    <div class="totw">
+      <img class="image-totw" src="../assets/Trailers/trailer1.png">
     </div>
   </div>
 </template>
