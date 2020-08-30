@@ -3,6 +3,11 @@
     src: url(../assets/OctinCollegeHv.ttf);
   }
 
+* {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 body {
     background-color: #1A1A1A;
     font-family: 'Customfont', sans-serif;
@@ -14,8 +19,12 @@ body {
 }
 
 header {
-    margin-top: 25px;
+    /* margin-top: 25px; */
     padding: 20px;
+}
+
+.traileroftheweek {
+  padding: 20px;
 }
 
 .active {
@@ -26,26 +35,40 @@ header {
     float: right;
 }
 
-.trialerofw {
-  margin-top: 35px;
-}
-
-.totw {
-  width: 95%;
-  height: 150px;
+.card {
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 4px;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  display: flex;
+  flex-direction: row;
   border-radius: 20px;
-  background-color: black;
+  position: relative;
 }
 
-.image-totw {
-  position: relative;
-  width: 32.4%;
+
+.card-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.title-total {
+  /* margin-top: -10px; */
+  /* margin: auto; */
+  margin-left: -40px;
+  font-size: 15px;
   
 }
 
-.title-totw {
-  position: fixed;
-  text-align: center;
-  padding-left: 30%;
+.desc {
+  /* color: 0px 14px 80px rgba(255, 255, 255, 0.6); */
+  color: rgba(255, 255, 255, 0.6);
 }
 
+.portada img {
+  width: 65%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
