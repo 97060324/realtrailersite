@@ -4,8 +4,8 @@
 }
 
 * {
-text-decoration: none;
-color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 body {
@@ -14,8 +14,8 @@ body {
 }
 
 .body {
-margin-top: -20px;
-padding-left: 20px;
+  margin-top: -20px;  
+  padding-left: 20px;
 }
 
 header {
@@ -24,7 +24,7 @@ header {
 }
 
 .traileroftheweek {
-padding: 20px;
+  padding: 20px;
 }
 
 .active {
@@ -36,44 +36,44 @@ padding: 20px;
 }
 
 .card {
-width: 100%;
-height: 100%;
-background: black;
-border-radius: 4px;
-box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
-display: flex;
-flex-direction: row;
-border-radius: 20px;
-position: relative;
+  width: 100%;
+  height: 100%;
+  background: black;
+  border-radius: 4px;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  display: flex;
+  flex-direction: row;
+  border-radius: 20px;
+  position: relative;
 }
 
 
 .card-text {
-display: grid;
-grid-template-columns: 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .title-total {
-/* margin-top: -10px; */
-/* margin: auto; */
-margin-left: -40px;
-font-size: 15px;
+  /* margin-top: -10px; */
+  /* margin: auto; */
+  margin-left: -40px;
+  font-size: 15px;
 
 }
 
 .desc {
-/* color: 0px 14px 80px rgba(255, 255, 255, 0.6); */
-color: rgba(255, 255, 255, 0.6);
+  /* color: 0px 14px 80px rgba(255, 255, 255, 0.6); */
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .portada img {
-width: 65%;
-height: 100%;
-border-top-left-radius: 20px;
-border-bottom-left-radius: 20px;
+  width: 65%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 
 .slide {
-margin: 15px;
+  margin: 10px;
 }
