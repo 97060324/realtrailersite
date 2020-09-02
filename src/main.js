@@ -2,6 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import './css/style.css'
 import './css/html.css'
+import './css/trailerrecent.css'
 
 import VueCarousel from 'vue-carousel';
 Vue.use(VueCarousel);
