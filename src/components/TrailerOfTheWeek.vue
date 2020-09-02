@@ -22,6 +22,5 @@
 
 <script>
 export default {
-  
 }
 </script>
