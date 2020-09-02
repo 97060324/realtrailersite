@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <div class="recenttrailer">
-      <carousel :perPage="1.5" :loop="true" :pagination-enabled="false" :autoplay="true">
+      <carousel :perPageCustom="[[480, 1.5], [768, 4]]" :loop="true" :pagination-enabled="false" :autoplay="true">
       <slide class="slide">
         <a href="trialer1"><img src="../assets/Trailers/trailer1.png"></a>
       </slide>
