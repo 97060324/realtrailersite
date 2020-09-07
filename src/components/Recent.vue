@@ -1,28 +1,16 @@
 <template>
   <div class="body">
+    <!-- <ul>
+      <li v-for="item in list" :key="item.id">
+        {{ item }}
+      </li>
+    </ul> -->
     <div class="recenttrailer">
       <carousel :perPageCustom="[[480, 2], [768, 3]]" :loop="true" :pagination-enabled="false" :autoplay="true">
-      <slide class="slide">
-        <a href="trialer1"><img src="../assets/Trailers/trailer1.png"></a>
-      </slide>
-      <slide class="slide">
-        <a href="trailer2"><img src="../assets/Trailers/trailer2.png"></a>
-      </slide>
-      <slide class="slide">
-        <a href="trailer3"><img src="../assets/Trailers/trailer3.png"></a>
-      </slide>
-      <slide class="slide">
-        <a href="trailer4"><img src="../assets/Trailers/trailer4.png"></a>
-      </slide>
-      <slide class="slide">
-        <a href="trailer5"><img src="../assets/Trailers/trailer5.png"></a>
+      <slide class="slide" v-for="item in list" :key="item.id">
+        <a href="#"><img class="imageSlide" v-bind:src="item.cardimage"></a>
       </slide>  
     </carousel>
-    <ul>
-      <li v-for="maintrailer in maintrailers" :key="maintrailer.id">
-        {{ maintrailer }}
-      </li>
-    </ul>
     </div>
   </div>
 </template>
@@ -38,12 +26,14 @@ export default {
   data() {
     return {
       maintrailers: [],
+      list: undefined,
     }
   },
   mounted() {
     Vue.axios.get('https://davidvandenpol.nl/json/cardtrailer.json')
     .then((resp)=>{
-      console.warn(resp)
+      this.list=resp.data.maintrailer;
+      // console.warn(resp.data.maintrailer)
     })
   },
   components: {
