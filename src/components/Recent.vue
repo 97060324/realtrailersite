@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <div class="recenttrailer">
-      <carousel :perPageCustom="[[480, 1.5], [768, 4]]" :loop="true" :pagination-enabled="false" :autoplay="true">
+      <carousel :perPageCustom="[[480, 2], [768, 3]]" :loop="true" :pagination-enabled="false" :autoplay="true">
       <slide class="slide">
         <a href="trialer1"><img src="../assets/Trailers/trailer1.png"></a>
       </slide>
@@ -18,7 +18,6 @@
         <a href="trailer5"><img src="../assets/Trailers/trailer5.png"></a>
       </slide>  
     </carousel>
-
     <ul>
       <li v-for="maintrailer in maintrailers" :key="maintrailer.id">
         {{ maintrailer }}
@@ -29,23 +28,23 @@
 </template>
 
 <script>
+import Vue from 'vue';
 import { Carousel, Slide } from 'vue-carousel';
 import axios from 'axios';
+import VueAxios from 'vue-axios'
 
+Vue.use(VueAxios,axios)
 export default {
   data() {
     return {
       maintrailers: [],
     }
   },
-  async created() {
-    try {
-      const red = await axios.get('https://davidvandenpol.nl/json/cardtrailer.json');
-
-      this.maintrailer = red.data;
-    } catch {
-      console.error();
-    }
+  mounted() {
+    Vue.axios.get('https://davidvandenpol.nl/json/cardtrailer.json')
+    .then((resp)=>{
+      console.warn(resp)
+    })
   },
   components: {
     Carousel,
