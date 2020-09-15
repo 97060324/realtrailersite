@@ -33,12 +33,12 @@ export default {
       list: undefined,
     }
   },
-  mounted() {
-    Vue.axios.get('https://davidvandenpol.nl/json/cardtrailer.json')
-    .then((resp)=>{
-      this.list=resp.data.maintrailer;
-      // console.warn(resp.data.maintrailer)
-    })
-  },
+  // mounted() {
+  //   Vue.axios.get('https://davidvandenpol.nl/json/cardtrailer.json')
+  //   .then((resp)=>{
+  //     this.list=resp.data.maintrailer;
+  //     // console.warn(resp.data.maintrailer)
+  //   })
+  // },
 }
 </script>

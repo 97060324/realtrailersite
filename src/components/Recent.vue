@@ -1,15 +1,10 @@
 <template>
   <div class="body">
-    <!-- <ul>
-      <li v-for="item in list" :key="item.id">
-        {{ item }}
-      </li>
-    </ul> -->
     <div class="recenttrailer">
       <carousel :perPageCustom="[[480, 2], [768, 3]]" :loop="true" :pagination-enabled="false" :autoplay="true">
       <slide class="slide" v-for="item in list" :key="item.id">
         <a href="#"><img class="imageSlide" v-bind:src="item.cardimage"></a>
-      </slide>  
+      </slide>
     </carousel>
     </div>
   </div>
@@ -30,10 +25,11 @@ export default {
     }
   },
   mounted() {
-    Vue.axios.get('https://davidvandenpol.nl/json/cardtrailer.json')
+    Vue.axios.get('https://my-json-server.typicode.com/97060324/RestAPITrailerApp/db')
+
     .then((resp)=>{
       this.list=resp.data.maintrailer;
-      // console.warn(resp.data.maintrailer)
+      console.warn(resp.data.maintrailer)
     })
   },
   components: {
