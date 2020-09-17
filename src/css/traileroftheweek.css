@@ -1,0 +1,22 @@
+.card {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 90%;
+    height: 150px;
+    background-color: #000000;
+    border-radius: 20px;
+}
+
+.card-image {
+    position: absolute;
+    border-radius: 20px 0px 0px 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    padding-top: 1px;
+    padding-left: 120px;
+    position: relative;
+}
+
+

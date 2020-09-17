@@ -1,21 +1,14 @@
 <template>
-  <div class="traileroftheweek">
-  <!-- <h2 class="trialerofw">Trailers of the week</h2>
-  <a href="#">
-    <div class="card">
-    <div class="card-text">
-      <div class="portada">
-        <img v-bind:src="image.api">
-      </div>
-      <div class="title-total">   
-        <h2>Unhinged</h2>
-        <div class="desc"><b>9,7</b>/10</div>
-        <div class="desc">1h 31min</div>
-        <div class="desc">action, adventure, sci-fi</div>
-      </div>
-    </div>
-  </div>
-  </a> -->
+  <div>
+    <h2 style="padding-left: 20px;">Trailers of the week</h2>
+        <div v-for="item in list" :key="item.id">
+            <div class="card">
+                <img class="card-image" width="101px" v-bind:src=" item.cardimage" /> 
+                <div class="card-title">
+                    <p>{{ item.name }}</p>
+                </div>
+            </div>
+        </div>
 </div>
 </template>
 
@@ -33,12 +26,12 @@ export default {
       list: undefined,
     }
   },
-  // mounted() {
-  //   Vue.axios.get('https://davidvandenpol.nl/json/cardtrailer.json')
-  //   .then((resp)=>{
-  //     this.list=resp.data.maintrailer;
-  //     // console.warn(resp.data.maintrailer)
-  //   })
-  // },
+  mounted() {
+    Vue.axios.get('https://api.npoint.io/1f7da34f4106e07d3fc3')
+    .then((resp)=>{
+      this.list=resp.data.traileroftheweek;
+    //   console.warn(resp.data.traileroftheweek)
+    })
+  },
 }
 </script>

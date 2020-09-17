@@ -3,6 +3,7 @@ import App from './App.vue'
 import './css/style.css'
 import './css/html.css'
 import './css/trailerrecent.css'
+import './css/traileroftheweek.css'
 import '../vue.config'
 
 import VueCarousel from 'vue-carousel';

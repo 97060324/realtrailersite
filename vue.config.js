@@ -1,5 +1,5 @@
 module.exports = {
   devServer: {
-    proxy: 'https://my-json-server.typicode.com/'
+    proxy: 'https://api.npoint.io/'
   }
 };

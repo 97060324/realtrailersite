@@ -7,3 +7,11 @@
   width: 100%;
   border-radius: 20px;
 }
+
+.slide {
+  margin: 10px;
+}
+
+.searchbtn {
+  float: right;
+}

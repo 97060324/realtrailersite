@@ -25,11 +25,11 @@ export default {
     }
   },
   mounted() {
-    Vue.axios.get('https://my-json-server.typicode.com/97060324/RestAPITrailerApp/db')
+    Vue.axios.get('https://api.npoint.io/8f1508e4c976b0fdafbf')
 
     .then((resp)=>{
       this.list=resp.data.maintrailer;
-      console.warn(resp.data.maintrailer)
+      // console.warn(resp.data.maintrailer)
     })
   },
   components: {
