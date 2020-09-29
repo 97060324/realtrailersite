@@ -5,7 +5,16 @@
             <div class="card">
                 <img class="card-image" width="101px" v-bind:src=" item.cardimage" /> 
                 <div class="card-title">
-                    <p>{{ item.name }}</p>
+                    {{ item.name }}
+                </div>
+                <div class="card-rating">
+                    {{ item.rating }}
+                </div>
+                <div class="card-time">
+                    {{ item.time }}
+                </div>
+                <div class="card-category">
+                    {{ item.category }}
                 </div>
             </div>
         </div>

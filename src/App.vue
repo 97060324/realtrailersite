@@ -3,6 +3,7 @@
     <TrailerHead />
     <Recent />
     <TrailerOfTheWeek/>
+    <TrailerCategorys/>
   </div>
 </template>
 
@@ -11,6 +12,7 @@ import TrailerHead from './components/TrailerHead.vue'
 import TrailerOfTheWeek from './components/TrailerOfTheWeek.vue'
 
 import Recent from './components/Recent.vue'
+import TrailerCategorys from './components/TrailerCategorys'
 
 
 export default {
@@ -19,6 +21,7 @@ export default {
     TrailerHead,
     Recent,
     TrailerOfTheWeek,
+    TrailerCategorys,
   }
 }
 </script>
