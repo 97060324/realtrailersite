@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <div class="recenttrailer">
-      <carousel :perPageCustom="[[480, 2], [768, 3]]" :loop="true" :pagination-enabled="false" :autoplay="true">
+      <carousel :perPageCustom="[[370, 1.5], [768, 5]]" :loop="true" :pagination-enabled="false" :autoplay="true">
       <slide class="slide" v-for="item in list" :key="item.id">
         <a href="#"><img class="imageSlide" v-bind:src="item.cardimage"></a>
       </slide>
@@ -29,7 +29,6 @@ export default {
 
     .then((resp)=>{
       this.list=resp.data.maintrailer;
-      // console.warn(resp.data.maintrailer)
     })
   },
   components: {
