@@ -1,18 +1,18 @@
 <template>
   <div class="body">
-    <div class="recenttrailer">
-      <carousel :perPageCustom="[[370, 1.5], [768, 5]]" :loop="true" :pagination-enabled="false" :autoplay="true">
-      <slide class="slide" v-for="item in list" :key="item.id">
-        <a href="#"><img class="imageSlide" v-bind:src="item.cardimage"></a>
-      </slide>
-    </carousel>
+    <div v-for="items in list" :key="items.id" class="recenttrailer">
+      <div class="trailer-image">
+        <img style="border-radius: 20px" width="60%" v-bind:src="items.image" />
+      </div>
+      <div class="trailer-title">
+        <h1>{{items.name}}</h1>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
 import Vue from 'vue';
-import { Carousel, Slide } from 'vue-carousel';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
 
@@ -32,8 +32,6 @@ export default {
     })
   },
   components: {
-    Carousel,
-    Slide
   }
 }
 </script>

@@ -3,15 +3,15 @@
   padding-left: 20px;
 }
 
-.imageSlide {
-  width: 100%;
+.recenttrailer {
+  display: flex;
+  padding-left: -20px;
+}
+
+.trailer-image {
   border-radius: 20px;
 }
 
-.slide {
-  margin: 10px;
-}
-
-.searchbtn {
-  float: right;
+.trailer-title {
+  margin-left: -20px;
 }
