@@ -1,12 +1,10 @@
 <template>
   <div class="body">
-    <div v-for="items in list" :key="items.id" class="recenttrailer">
-      <div class="trailer-image">
-        <img style="border-radius: 20px" width="60%" v-bind:src="items.image" />
-      </div>
-      <div class="trailer-title">
-        <h1>{{items.name}}</h1>
-      </div>
+    <div class="trailer-recent" v-for="items in list" :key="items.id">
+        <img class="trailer-image" v-bind:src="items.image" />
+          <div class="trailer-title">
+            <h1>{{items.name}}</h1>
+          </div>
     </div>
   </div>
 </template>

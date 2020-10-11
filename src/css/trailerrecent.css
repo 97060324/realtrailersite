@@ -1,17 +1,16 @@
 .body {
-  margin-top: -20px;
   padding-left: 20px;
 }
 
-.recenttrailer {
+.trailer-recent {
   display: flex;
-  padding-left: -20px;
 }
 
 .trailer-image {
+  width: 50%;
   border-radius: 20px;
 }
 
-.trailer-title {
-  margin-left: -20px;
-}
+ .trailer-title {
+   padding-left: 25px;
+ }
