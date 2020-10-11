@@ -7,3 +7,20 @@
     height: 100%;
     width: 100%;
 }
+
+.trailer-overview-backgroundimage {
+    width: 100%;
+}
+
+.trailer-carousel-image {
+    width: 40%;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top: -40%;
+    box-shadow: 17px 26px 44px -16px rgba(0,0,0,0.51);
+}
+
+.trailer-carousel-title {
+    margin-top: -500px;
+    z-index: 999999;
+}
