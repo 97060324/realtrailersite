@@ -1,8 +1,8 @@
 <template>
   <div id="app">
+    <TrailerOverview/>
     <TrailerHead />
     <Recent />
-    <TrailerOverview/>
   </div>
 </template>
 

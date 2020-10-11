@@ -1,0 +1,9 @@
+.trailer-overview {
+    display: none;
+    position: fixed;
+    background-color: #0B0B0B;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}

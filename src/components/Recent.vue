@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <div @click="test()" class="trailer-recent" v-for="trailer in list" :key="trailer.id">
+    <div @click="openTrailerOverview()" class="trailer-recent" v-for="trailer in list" :key="trailer.id">
         <img class="trailer-image" :src="trailer.image" />
           <div class="trailer-title">
             <h1>{{ trailer.name }}</h1>
@@ -17,7 +17,7 @@
       <div class="trailer-array" v-for="category in categorys" :key="category.id">{{ category.title }}</div>
     </div>
 
-    <div class="trailer-list" v-for="trailerlist in trailers" :key="trailerlist.id">
+    <div @click="openTrailerOverview()" class="trailer-list" v-for="trailerlist in trailers" :key="trailerlist.id">
       <img class="trailer-list-image" :src="trailerlist.image">
       <div class="trailer-list-title">
         <h2>{{ trailerlist.name }}</h2>
@@ -64,8 +64,10 @@ export default {
     })
   },
   methods: {
-    test() {
-      console.log('hoii')
+    openTrailerOverview() {
+      document.getElementsByClassName('trailer-overview')[0].style.display = 'block';
+      document.getElementsByClassName('body')[0].style.display = 'none';
+      document.getElementsByClassName('title')[0].style.display = 'none';
     }
   }
 }
