@@ -1,9 +1,12 @@
 <template>
   <div class="body">
-    <div class="trailer-recent" v-for="items in list" :key="items.id">
-        <img class="trailer-image" v-bind:src="items.image" />
+    <div class="trailer-recent" v-for="trailer in list" :key="trailer.id">
+        <img class="trailer-image" v-bind:src="trailer.image" />
           <div class="trailer-title">
-            <h1>{{items.name}}</h1>
+            <h1>{{ trailer.name }}</h1>
+            <h3>{{ trailer.year }}</h3>
+            <h3>{{ trailer.rating }}</h3>
+            <h3>{{ trailer.category }}</h3>
           </div>
     </div>
   </div>
