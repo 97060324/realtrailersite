@@ -1,13 +1,8 @@
 <template>
     <div class="trailer-overview">
-        <carousel :perPage="1" :paginationEnabled="false" :autoplay="true">
-            <slide v-for="trailer in trailers" :key="trailer.id">
-                <img class="trailer-overview-backgroundimage" :src="trailer.image">
-                <div class="trailer-carousel">
-                    <img class="trailer-carousel-image" :src="trailer.image">
-                </div>  
-            </slide>
-        </carousel>
+        <div class="trailer-overview-container">
+            <img class="trailer-overview-array" v-for="trailer in trailers" :key="trailer.id" :src="trailer.image">
+        </div>
     </div>
 </template>
 
@@ -16,7 +11,6 @@
 import Vue from 'vue';
 import axios from 'axios';
 import VueAxios from 'vue-axios';
-import { Carousel, Slide } from 'vue-carousel';
 
 Vue.use(VueAxios,axios)
 export default {
@@ -39,9 +33,5 @@ export default {
             document.getElementsByClassName('title')[0].style.display = 'block';
         }
     },
-     components: {
-        Carousel,
-        Slide
-    }
 }
 </script>

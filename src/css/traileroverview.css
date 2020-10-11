@@ -4,23 +4,27 @@
     background-color: #0B0B0B;
     top: 0;
     left: 0;
+    bottom: 0;
     height: 100%;
     width: 100%;
 }
 
-.trailer-overview-backgroundimage {
+.trailer-overview-container {
+    display: flex;
+    height: 90%;
+    overflow-x: auto;
+  }
+
+.trailer-overview-container::-webkit-scrollbar{
+    width: 0;
+}
+
+.trailer-overview .trailer-overview-array {
+    width: 100%;
+    text-align: center;
+}
+
+.image-size {
     width: 100%;
 }
 
-.trailer-carousel-image {
-    width: 40%;
-    border-radius: 20px;
-    margin-left: 30%;
-    margin-top: -40%;
-    box-shadow: 17px 26px 44px -16px rgba(0,0,0,0.51);
-}
-
-.trailer-carousel-title {
-    margin-top: -500px;
-    z-index: 999999;
-}
