@@ -54,6 +54,7 @@
 .trailer-list-image {
   width: 35%;
   border-radius: 20px;
+  box-shadow: 17px 26px 44px -16px rgba(0,0,0,0.51);
 }
 
 .trailer-list-title {

@@ -2,19 +2,21 @@
   <div id="app">
     <TrailerHead />
     <Recent />
+    <TrailerOverview/>
   </div>
 </template>
 
 <script>
 import TrailerHead from './components/TrailerHead.vue'
 import Recent from './components/Recent.vue'
-
+import TrailerOverview from './components/TrailerOverview'
 
 export default {
   name: 'App',
   components: {
     TrailerHead,
     Recent,
+    TrailerOverview,
   }
 }
 </script>

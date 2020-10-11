@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <div class="trailer-recent" v-for="trailer in list" :key="trailer.id">
+    <div @click="test()" class="trailer-recent" v-for="trailer in list" :key="trailer.id">
         <img class="trailer-image" :src="trailer.image" />
           <div class="trailer-title">
             <h1>{{ trailer.name }}</h1>
@@ -62,7 +62,11 @@ export default {
     .then((resp)=>{
       this.trailers=resp.data.traileroftheweek;
     })
-
+  },
+  methods: {
+    test() {
+      console.log('hoii')
+    }
   }
 }
 </script>
