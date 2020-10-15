@@ -3,6 +3,9 @@
         <div class="trailer-overview-container">
             <img class="trailer-overview-array" v-for="trailer in trailers" :key="trailer.id" :src="trailer.image">
         </div>
+        <div class="trailer-overview-title">
+
+        </div>
     </div>
 </template>
 
