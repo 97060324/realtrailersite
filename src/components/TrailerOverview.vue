@@ -1,7 +1,6 @@
 <template>
     <div class="trailer-overview">
-        <button @click="closeTrailerOverview()">Back</button>
-        
+
     </div>
 </template>
 
