@@ -1,10 +1,10 @@
 <template>
     <div class="trailer-overview">
-        <div class="trailer-overview-container">
-            <img class="trailer-overview-array" v-for="trailer in trailers" :key="trailer.id" :src="trailer.image">
-        </div>
+        <button @click="closeTrailerOverview()">Back</button>
+        
     </div>
 </template>
+
 
 
 <script>

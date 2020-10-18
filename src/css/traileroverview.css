@@ -9,22 +9,7 @@
     width: 100%;
 }
 
-.trailer-overview-container {
-    display: flex;
-    height: 90%;
-    overflow-x: auto;
-  }
-
-.trailer-overview-container::-webkit-scrollbar{
-    width: 0;
+.trailer-overview-container .img{
+    width: 10%;
+    background-repeat: no-repeat;
 }
-
-.trailer-overview .trailer-overview-array {
-    width: 100%;
-    text-align: center;
-}
-
-.image-size {
-    width: 100%;
-}
-
