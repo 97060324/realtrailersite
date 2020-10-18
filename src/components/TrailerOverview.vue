@@ -4,7 +4,7 @@
     </div>
 </template>
 
-
+//:href="`${trailer.link}`"
 
 <script>
 import Vue from 'vue';

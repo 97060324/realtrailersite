@@ -6,6 +6,12 @@ import './css/trailerrecent.css'
 import './css/traileroverview.css'
 import '../vue.config'
 
+import VueAnalytics from 'vue-analytics'
+Vue.use(VueAnalytics, {
+  id: 'UA-180796467-1',
+  checkDuplicatedScript: true
+})
+
 import VueCarousel from 'vue-carousel';
 Vue.use(VueCarousel);
 
