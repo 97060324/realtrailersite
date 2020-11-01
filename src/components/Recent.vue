@@ -45,19 +45,19 @@ export default {
     }
   },
   mounted() {
-    Vue.axios.get('https://api.npoint.io/8f1508e4c976b0fdafbf')
+    Vue.axios.get('https://api.npoint.io/8f1508e4c976b0fdafbf') // MainTrailer API
 
     .then((resp)=>{
       this.list=resp.data.maintrailer;
     }),
 
-    Vue.axios.get('https://api.npoint.io/c6814c2454d61cd7ef85')
+    Vue.axios.get('https://api.npoint.io/c6814c2454d61cd7ef85') // Categorys API
 
     .then((resp)=>{
       this.categorys=resp.data.categorys;
     }),
 
-    Vue.axios.get('https://api.npoint.io/1f7da34f4106e07d3fc3')
+    Vue.axios.get('https://api.npoint.io/1f7da34f4106e07d3fc3') // Trailer of the week
 
     .then((resp)=>{
       this.trailers=resp.data.traileroftheweek;
