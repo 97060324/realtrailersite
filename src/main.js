@@ -1,16 +1,13 @@
 import Vue from 'vue'
 import App from './App.vue'
+import VueRouter from 'vue-router'
 import './css/style.css'
 import './css/html.css'
 import './css/trailerrecent.css'
 import './css/traileroverview.css'
 import '../vue.config'
 
-import VueAnalytics from 'vue-analytics'
-Vue.use(VueAnalytics, {
-  id: 'UA-180796467-1',
-  checkDuplicatedScript: true
-})
+Vue.use(VueRouter);
 
 import VueCarousel from 'vue-carousel';
 Vue.use(VueCarousel);

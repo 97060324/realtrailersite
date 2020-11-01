@@ -17,7 +17,7 @@
       <div class="trailer-array" v-for="category in categorys" :key="category.id">{{ category.title }}</div>
     </div>
 
-    <div @click="openTrailerOverview()" class="trailer-list" v-for="trailerlist in trailers" :key="trailerlist.id">
+    <!-- <div @click="openTrailerOverview()" class="trailer-list" v-for="trailerlist in trailers" :key="trailerlist.id">
       <img class="trailer-list-image" :src="trailerlist.image">
       <div class="trailer-list-title">
         <h2>{{ trailerlist.name }}</h2>
@@ -25,7 +25,16 @@
         <h3>{{ trailerlist.rating }}</h3>
         <h3>{{ trailerlist.category }}</h3>
       </div>
-    </div>
+    </div> -->
+    <router-link to="/home" class="trailer-list" v-for="trailerlist in trailers" :key="trailerlist.id">
+      <img class="trailer-list-image" :src="trailerlist.image">
+      <div class="trailer-list-title">
+        <h2>{{ trailerlist.name }}</h2>
+        <h3>{{ trailerlist.year }}</h3>
+        <h3>{{ trailerlist.rating }}</h3>
+        <h3>{{ trailerlist.category }}</h3>
+      </div>
+    </router-link>
   </div>
 </template>
 
