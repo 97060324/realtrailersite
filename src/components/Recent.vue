@@ -89,12 +89,6 @@ export default {
           break;
       }
     },
-
-    // openTrailerOverview() {
-    //   document.getElementsByClassName('trailer-overview')[0].style.display = 'block'; //trailer-overview kan dan naar verschillende trailers
-    //   document.getElementsByClassName('body')[0].style.display = 'none';
-    //   document.getElementsByClassName('title')[0].style.display = 'none';
-    // }
   }
 }
 </script>
